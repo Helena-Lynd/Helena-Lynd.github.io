@@ -47,6 +47,10 @@
   margin-right: auto;
 }
 
+a {
+  color: white;
+}
+
 body {
   background-color: #d3efff;
 }
