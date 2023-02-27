@@ -51,6 +51,16 @@ a {
   color: white;
 }
 
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: #d3efff;
+}
+
 body {
   background-color: #d3efff;
 }
