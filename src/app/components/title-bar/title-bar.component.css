@@ -1,0 +1,35 @@
+header {
+    background: #04BEDB;
+    box-shadow: 0px 5px 5px lightgray;
+    height: 7em;
+    width: 100%;
+}
+
+p {
+    color: white;
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: medium;
+    margin-left: 0.5em;
+}
+
+.button {
+    background-color: #04BEDB;
+    border: none;
+    color: white;
+    float: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    height: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.button:hover {
+    background-color: #0891B2;
+}
+
+.button-group {
+    display: inline-block;
+}
