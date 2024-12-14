@@ -1,7 +1,7 @@
 header {
     background: #04BEDB;
     box-shadow: 0px 5px 5px lightgray;
-    height: 7em;
+    height: 12vh;
     width: 100%;
 }
 
@@ -11,7 +11,7 @@ p {
     font-family: Montserrat;
     font-size: 64px;
     font-weight: medium;
-    margin-left: 0.5em;
+    margin-left: 3vh;
 }
 
 .button {
@@ -32,4 +32,13 @@ p {
 
 .button-group {
     display: inline-block;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  font-size: x-large;
 }

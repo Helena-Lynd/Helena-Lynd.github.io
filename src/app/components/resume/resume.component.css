@@ -1,0 +1,89 @@
+p {
+    color: black;
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-left: 3vh;
+}
+
+hr {
+    border: none;
+    border-top: 4px dotted #04BEDB;
+    flex-grow: 1;
+    margin: 12px;
+    opacity: 1;
+}
+
+li {
+    color: black;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-left: 3vh;
+}
+
+.resume-text {
+    color: black;
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-top: 3vh;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.header-text {
+    color:#04BEDB;
+    font-weight: medium;
+    font-family: Montserrat;
+    font-size: 32px;
+    margin-top: 3vh;
+    white-space: nowrap;
+}
+
+.heading-with-line {
+    display: flex;
+    align-items: flex-end;
+}
+
+.sidebar-container {
+    display: flex;            
+    margin-top: 5px;
+    min-height: calc(88vh - 10px);
+    overflow: hidden;
+}
+
+.left-sidebar {
+    background-color: #f2f2f2;
+    width: 10%;                  
+}
+
+.content {
+    background-color: #fff;      
+    flex: 1;                 
+    padding: 10px;               
+    overflow-y: auto;               
+}
+
+.header-info {
+    background-color: white;
+    color: black;
+    border: 5px solid #04BEDB;
+    height: 10%;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.right-sidebar {
+    background-color: #f2f2f2;
+    width: 10%;                  
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size: 25px;
+    color:#04BEDB;
+  }
