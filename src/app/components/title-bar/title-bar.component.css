@@ -12,6 +12,7 @@ p {
     font-size: 64px;
     font-weight: medium;
     margin-left: 3vh;
+    line-height: 12vh;
 }
 
 .button {

@@ -1,11 +1,4 @@
-p {
-    color: black;
-    display: inline-block;
-    font-family: Montserrat;
-    font-size: 20px;
-    margin-left: 3vh;
-}
-
+/* Blue dotted lines to delineate resume sections */
 hr {
     border: none;
     border-top: 4px dotted #04BEDB;
@@ -14,49 +7,15 @@ hr {
     opacity: 1;
 }
 
-li {
+/* Body text, black 20 pt. with spacing for icons and ul */
+p, li {
     color: black;
     font-family: Montserrat;
     font-size: 20px;
     margin-left: 3vh;
 }
 
-.resume-text {
-    color: black;
-    display: inline-block;
-    font-family: Montserrat;
-    font-size: 20px;
-    margin-top: 3vh;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-
-.header-text {
-    color:#04BEDB;
-    font-weight: medium;
-    font-family: Montserrat;
-    font-size: 32px;
-    margin-top: 3vh;
-    white-space: nowrap;
-}
-
-.heading-with-line {
-    display: flex;
-    align-items: flex-end;
-}
-
-.sidebar-container {
-    display: flex;            
-    margin-top: 5px;
-    min-height: calc(88vh - 10px);
-    overflow: hidden;
-}
-
-.left-sidebar {
-    background-color: #f2f2f2;
-    width: 10%;                  
-}
-
+/* White center page for resume content */
 .content {
     background-color: #fff;      
     flex: 1;                 
@@ -64,26 +23,71 @@ li {
     overflow-y: auto;               
 }
 
-.header-info {
-    background-color: white;
-    color: black;
+/* Flex container for Section Headings to display next to dotted lines */
+.heading-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Section headings, blue 32 pt. */
+.heading-text {
+    color:#04BEDB;
+    font-weight: medium;
+    font-family: Montserrat;
+    font-size: 32px;
+    margin-top: 2vh;
+    white-space: nowrap;
+}
+
+/* Icon styling */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    font-size: 25px;
+    color:#04BEDB;
+  }
+
+/* Blue bordered box to display quick resume facts */
+.quick-facts-box {
     border: 5px solid #04BEDB;
     height: 10%;
     width: 100%;
     margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vh;
 }
 
-.right-sidebar {
+/* Align icons with fact text */
+.quick-fact {
+    line-height: 10%;
+}
+
+/* Body text, black 20 pt. with spacing for regular resume text */
+.resume-text {
+    color: black;
+    display: inline-block;
+    font-family: Montserrat;
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+/* Flex container for sidebars and content between them */
+.sidebar-container {
+    display: flex;            
+    margin-top: 5px;
+    min-height: calc(88vh - 5px);
+    overflow: hidden;
+}
+
+/* Gray sidebar */
+.sidebar {
     background-color: #f2f2f2;
-    width: 10%;                  
+    width: 15%;                  
 }
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
-    font-size: 25px;
-    color:#04BEDB;
-  }
