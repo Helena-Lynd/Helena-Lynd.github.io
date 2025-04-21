@@ -1,42 +1,139 @@
+/*********************************************************************************
+ *                                Tag Styles                                     *
+ *********************************************************************************/
+
+html, body {
+    /* Alignment */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Color */
+    background-color: #f2f2f2;
+}
+
 /* Blue dotted lines to delineate resume sections */
 hr {
-    border: none;
-    border-top: 4px dotted #04BEDB;
-    flex-grow: 1;
+    /* Alignment */
     margin: 12px;
+    flex-grow: 1;
+    /* Color */
+    border-top: 4px dotted #04BEDB;
     opacity: 1;
 }
 
-/* Body text, black 20 pt. with spacing for icons and ul */
+/* Body text with spacing for icons and ul */
 p, li {
+    /* Alignment */
+    margin-left: 3vh;
+    /* Typography */
     color: black;
     font-family: Montserrat;
     font-size: 20px;
-    margin-left: 3vh;
 }
 
-/* White center page for resume content */
-.content {
-    background-color: #fff;      
-    flex: 1;                 
-    padding: 10px;               
-    overflow-y: auto;               
+/*********************************************************************************
+ *                         Custom Styles - Flexboxes                             *
+ *********************************************************************************/
+
+/* Flex container for sidebars and content between them */
+.sidebar-container {
+    /* Alignment */
+    display: flex;            
+    margin-top: 5px;
+    min-height: 100vh; /* Makes sure sidebars actually display, even though they have no content within them */
+}
+
+/* Blue bordered box to display quick resume facts */
+.quick-facts-box {
+    /* Alignment */
+    align-items: center;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin-top: 2vh;
+    justify-content: space-between;
+    padding-right: 5vh;
+    /* Color */
+    border: 5px solid #04BEDB;
 }
 
 /* Flex container for Section Headings to display next to dotted lines */
 .heading-container {
-    display: flex;
+    /* Alignment */
     align-items: flex-end;
+    display: flex;
 }
 
-/* Section headings, blue 32 pt. */
+/*********************************************************************************
+ *                         Custom Styles - Textboxes                             *
+ *********************************************************************************/
+
+ /* Gray sidebar */
+.sidebar {
+    /* Alignment */
+    height: auto;
+    position: relative;
+    width: 15%;                  
+    z-index: 1;
+    /* Color */
+    background-color: #f2f2f2;
+}
+
+/* White center page for resume content */
+.content {
+    /* Alignment */    
+    flex: 1;                 
+    padding: 10px; 
+    position: relative;
+    z-index: 2;  /* Elevates content textbox so that dropshadows display over sidebars */
+    /* Color */
+    background-color: #fff;      
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1),  /* Left */
+                10px 0 20px rgba(0, 0, 0, 0.1),   /* Right */
+                0px 10px 20px rgba(0, 0, 0, 0.1); /* bottom */
+}
+
+/* Gray footer */
+.gray-footer {
+    /* Alignment */
+    height: 100px;
+    width: 100%;
+    /* Color */
+    background-color: #f2f2f2;
+}
+
+/*********************************************************************************
+ *                           Custom Styles - Text                                *
+ *********************************************************************************/
+
+ /* Section headings */
 .heading-text {
+    /* Alignment */
+    margin-top: 2vh;
+    white-space: nowrap;
+    /* Typography */
     color:#04BEDB;
     font-weight: medium;
     font-family: Montserrat;
     font-size: 32px;
+}
+
+/* Body text with spacing for regular resume text */
+.resume-text {
+    /* Alignment */
+    display: inline-block;
     margin-top: 2vh;
-    white-space: nowrap;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    color: black;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+/* Align icons with fact text */
+.quick-fact {
+    line-height: 10%;
 }
 
 /* Icon styling */
@@ -48,46 +145,4 @@ p, li {
         'opsz' 24;
     font-size: 25px;
     color:#04BEDB;
-  }
-
-/* Blue bordered box to display quick resume facts */
-.quick-facts-box {
-    border: 5px solid #04BEDB;
-    height: 10%;
-    width: 100%;
-    margin-top: 2vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 5vh;
-}
-
-/* Align icons with fact text */
-.quick-fact {
-    line-height: 10%;
-}
-
-/* Body text, black 20 pt. with spacing for regular resume text */
-.resume-text {
-    color: black;
-    display: inline-block;
-    font-family: Montserrat;
-    font-size: 20px;
-    margin-top: 2vh;
-    margin-bottom: 0;
-    margin-left: 0;
-}
-
-/* Flex container for sidebars and content between them */
-.sidebar-container {
-    display: flex;            
-    margin-top: 5px;
-    min-height: calc(88vh - 5px);
-    overflow: hidden;
-}
-
-/* Gray sidebar */
-.sidebar {
-    background-color: #f2f2f2;
-    width: 15%;                  
 }

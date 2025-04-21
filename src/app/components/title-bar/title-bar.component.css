@@ -1,30 +1,44 @@
+/*********************************************************************************
+ *                                Tag Styles                                     *
+ *********************************************************************************/
 header {
-    background: #04BEDB;
-    box-shadow: 0px 5px 5px lightgray;
+    /* Alignment */
     height: 12vh;
     width: 100%;
+    /* Color */
+    background: #04BEDB;
+    box-shadow: 0px 5px 20px lightgray;
 }
 
+/* Text sized for the first letter of each word being larger */
 p {
-    color: white;
+    /* Alignment */
     display: inline-block;
+    line-height: 12vh;
+    margin-left: 3vh;
+    /* Typography */
+    color: white;
     font-family: Montserrat;
     font-size: 64px;
     font-weight: medium;
-    margin-left: 3vh;
-    line-height: 12vh;
 }
 
+/*********************************************************************************
+ *                         Custom Styles - Buttons                               *
+ *********************************************************************************/
 .button {
-    background-color: #04BEDB;
+    /* Alignment */
     border: none;
-    color: white;
     float: right;
-    font-family: Montserrat;
-    font-size: 24px;
     height: 100%;
     padding-left: 2.5%;
     padding-right: 2.5%;
+    /* Color */
+    background-color: #04BEDB;
+    /* Typography */
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
 }
 
 .button:hover {
